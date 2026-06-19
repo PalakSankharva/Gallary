@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4c729db828.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <h1>🌿 Green Gallery</h1>
+        <p>Beautiful Image Gallery with Lightbox</p>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search images...">
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="flowers">Flowers</button>
+            <button class="filter-btn" data-filter="mountains">Mountains</button>
+        </div>
+    </header>
+
+    <section class="gallery">
+
+        <div class="gallery-item nature">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000" alt="Forest">
+            <div class="overlay">
+                <h3>Forest View</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item flowers">
+            <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=1000" alt="Flower">
+            <div class="overlay">
+                <h3>Beautiful Flower</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item mountains">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1000" alt="Mountain">
+            <div class="overlay">
+                <h3>Mountain Peak</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item nature">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1000" alt="Nature">
+            <div class="overlay">
+                <h3>Green Nature</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item flowers">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1000" alt="Flowers">
+            <div class="overlay">
+                <h3>Fresh Flowers</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item mountains">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1000" alt="Mountain">
+            <div class="overlay">
+                <h3>Snow Mountain</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item nature">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1000" alt="Nature">
+            <div class="overlay">
+                <h3>Lake View</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item flowers">
+            <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?w=1000" alt="Rose">
+            <div class="overlay">
+                <h3>Rose Garden</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox" id="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button class="nav-btn prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <img class="lightbox-img">
+
+        <div class="lightbox-info">
+            <p id="counter"></p>
+
+            <a id="downloadBtn" download>
+                <i class="fas fa-download"></i> Download
+            </a>
+        </div>
+
+        <button class="nav-btn next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
